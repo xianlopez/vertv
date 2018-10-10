@@ -1,3 +1,6 @@
+The goal is to watch the news and tell for how much time some people appear
+
+
 # YOLO_tensorflow
 
 (Version 0.3, Last updated :2017.02.21)

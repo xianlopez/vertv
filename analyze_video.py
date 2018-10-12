@@ -14,12 +14,12 @@ frames_list.sort()
 
 
 for frame_name in frames_list:
-	frame = cv2.imread(os.path.join(frames_dir, frame_name))
-	videoProcessor.process_frame(frame)
-	frame_w_boxes = videoProcessor.get_last_frame_with_detections()
-	cv2.imshow('YOLO_small detection', frame_w_boxes)
-	cv2.waitKey(int(1000 / 25))
-	#cv2.waitKey()
+    frame = cv2.imread(os.path.join(frames_dir, frame_name))
+    videoProcessor.process_frame(frame)
+    frame_w_boxes = videoProcessor.get_last_frame_with_detections()
+    cv2.imshow('YOLO_small detection', frame_w_boxes)
+    cv2.waitKey(int(1000 / 25))
+    #cv2.waitKey()
 
 
 

@@ -73,8 +73,8 @@ class Detector:
                 this_detection = Detection()
                 this_detection.x_center = xmin + w / 2.0
                 this_detection.y_center = ymin + h / 2.0
-                this_detection.width = w
-                this_detection.height = h
+                this_detection.width = w * 2
+                this_detection.height = h * 2
                 this_detection.conf = box.confidence
                 this_detection.class_name = self.faceRecognizer.get_person_name(image, this_detection)
                 all_detections.append(this_detection)
